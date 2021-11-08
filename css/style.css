@@ -24,6 +24,10 @@
     font-size: 35px;
 }
 
+.icon_text {
+    font-size: 20px;
+}
+
 /* icon colors */
 .icon_orange {
     color: orange;

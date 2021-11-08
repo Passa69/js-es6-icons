@@ -139,12 +139,14 @@ const containerBig = document.getElementById("container");
 
 // creazione html
 let iconCont = document.createElement("div");
-iconCont.classList.append("square_icon");
+iconCont.classList.add("square_icon");
 iconCont.innerHTML = `
 	<div class="icon_orange icon_size">
-		<i class=""></i>
+		<i class="${icons[0].family} ${icons[0].prefix}${icons[0].name}"></i>
 	</div>
-	<p>
-		
+	<p class="icon_text">
+		${icons[0].name}
 	</p>
 `;
+
+containerBig.appendChild(iconCont);
