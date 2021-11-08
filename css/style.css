@@ -17,6 +17,10 @@ section {
 
 #filter {
     background-color: #29b1dd;
+    padding-top:30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
 }
 
 /* main */
