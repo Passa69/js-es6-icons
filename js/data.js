@@ -139,14 +139,17 @@ const containerBig = document.getElementById("container");
 
 // creazione html
 let iconCont = document.createElement("div");
-iconCont.classList.add("square_icon");
-iconCont.innerHTML = `
-	<div class="icon_orange icon_size">
-		<i class="${icons[0].family} ${icons[0].prefix}${icons[0].name}"></i>
-	</div>
-	<p class="icon_text">
-		${icons[0].name}
-	</p>
-`;
+icons.forEach((structure) => {
+	iconCont.innerHTML += `
+		<div class="square_icon">
+			<div class="icon_orange icon_size">
+				<i class="${structure.family} ${structure.prefix}${structure.name}"></i>
+			</div>
+			<p class="icon_text">
+				${structure.name}
+			</p>
+		</div>
+	`;
+});
 
 containerBig.appendChild(iconCont);
