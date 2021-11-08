@@ -63,3 +63,8 @@ section {
 .icon_blue {
     color: blue;
 }
+
+/* js */
+.zero {
+    display: none;
+}

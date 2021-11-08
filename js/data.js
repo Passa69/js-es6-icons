@@ -137,6 +137,7 @@ const icons = [
 
 // container
 const containerBig = document.getElementById("container");
+const scrollbar = document.querySelector("scroll");
 
 // creazione html
 let iconCont = document.createElement("div");
