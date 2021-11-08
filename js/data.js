@@ -133,3 +133,18 @@ const icons = [
 			color: 'blue'
 		}
 ];
+
+// container
+const containerBig = document.getElementById("container");
+
+// creazione html
+let iconCont = document.createElement("div");
+iconCont.classList.append("square_icon");
+iconCont.innerHTML = `
+	<div class="icon_orange icon_size">
+		<i class=""></i>
+	</div>
+	<p>
+		
+	</p>
+`;

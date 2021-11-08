@@ -4,3 +4,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* layout */
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.square_icon {
+    width: 10%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.icon_size {
+    font-size: 35px;
+}
+
+/* icon colors */
+.icon_orange {
+    color: orange;
+}
+
+.icon_green {
+    color: green;
+}
+
+.icon_blue {
+    color: blue;
+}
