@@ -137,7 +137,7 @@ const icons = [
 
 // container
 const containerBig = document.getElementById("container");
-const scrollbar = document.querySelector("scroll");
+const scrollbox = document.querySelector("scroll");
 
 // creazione html
 let iconCont = document.createElement("div");
@@ -178,5 +178,9 @@ icons.forEach((structure) => {
 	}
 	
 });
-
 containerBig.appendChild(iconCont);
+
+scrollbox.onfullscreenchange(doSomething(
+	function () {
+	console.log("ciao");
+}));
