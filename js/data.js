@@ -180,7 +180,4 @@ icons.forEach((structure) => {
 });
 containerBig.appendChild(iconCont);
 
-scrollbox.onchange(doSomething(
-	function () {
-	console.log("ciao");
-}));
+
