@@ -1,6 +1,7 @@
 // 1. creare il contenitore di html in cui inserire le icone
 // 2. creare l'innerHTML dove inserire il codice dell'icona
 	// 2.1 creare un ciclo per mettere in ordine corretto gli elementi degli oggetti
+	// 2.2 aggiunta di condizione per il cmabio di colore
 // 3. creare il css per i contenitori delle icone
 
 
@@ -140,16 +141,41 @@ const containerBig = document.getElementById("container");
 // creazione html
 let iconCont = document.createElement("div");
 icons.forEach((structure) => {
-	iconCont.innerHTML += `
-		<div class="square_icon">
-			<div class="icon_orange icon_size">
-				<i class="${structure.family} ${structure.prefix}${structure.name}"></i>
+	if (structure.color === `orange`) {
+		iconCont.innerHTML += `
+			<div class="square_icon">
+				<div class="icon_orange icon_size">
+					<i class="${structure.family} ${structure.prefix}${structure.name}"></i>
+				</div>
+				<p class="icon_text">
+					${structure.name}
+				</p>
 			</div>
-			<p class="icon_text">
-				${structure.name}
-			</p>
-		</div>
-	`;
+		`;
+	} else if (structure.color === `green`) {
+		iconCont.innerHTML += `
+			<div class="square_icon">
+				<div class="icon_green icon_size">
+					<i class="${structure.family} ${structure.prefix}${structure.name}"></i>
+				</div>
+				<p class="icon_text">
+					${structure.name}
+				</p>
+			</div>
+		`;
+	} else {
+		iconCont.innerHTML += `
+			<div class="square_icon">
+				<div class="icon_blue icon_size">
+					<i class="${structure.family} ${structure.prefix}${structure.name}"></i>
+				</div>
+				<p class="icon_text">
+					${structure.name}
+				</p>
+			</div>
+		`;
+	}
+	
 });
 
 containerBig.appendChild(iconCont);
