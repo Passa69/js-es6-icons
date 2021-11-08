@@ -180,7 +180,7 @@ icons.forEach((structure) => {
 });
 containerBig.appendChild(iconCont);
 
-scrollbox.onfullscreenchange(doSomething(
+scrollbox.onchange(doSomething(
 	function () {
 	console.log("ciao");
 }));
